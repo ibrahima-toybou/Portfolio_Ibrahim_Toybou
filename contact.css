@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    display: block;
+    background: black;
+    color: white;
+}
+
+
+.header {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 20%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.point{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(14, 147, 236);
+}
+.navbar a {
+    
+    color: white;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: rgb(14, 147, 236);
+}
+#menu-icon{
+    display: none;
+} 
+
+/*--HOME SECTION--*/
+ .contact h2{ 
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: block;
+    max-height: 80vh;
+    padding: 6% 30% ;
+    justify-content: center;
+    text-align: center;
+    
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    background: transparent;
+    border: 2px solid rgb(14, 147, 236);
+}
+
+.contact form .input-box input {
+    flex: 1 1 48%;
+}
+
+.contact form textarea {
+    height: 200px;
+    resize: none;
+    width: 100%;
+}
+
+.contact form .btn{
+    padding: 10px;
+    background: transparent;
+    border: 2px solid rgb(14, 147, 236);
+    color: white;
+    border-radius: 10%;
+    animation: floatImage 3s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 2rem;
+    cursor: pointer;
+}
