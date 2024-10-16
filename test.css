@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+body {
+    width: 100%;
+    margin: auto;
+    display: block;
+    background: black;
+    color: white;
+}
+
+
+.header {
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem 20%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.point{
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(14, 147, 236);
+}
+.navbar a {
+    
+    color: white;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: rgb(14, 147, 236);
+}
+#menu-icon{
+    display: none;
+} 
+/*--HOME SECTION--*/
+.card-wrapper {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+.card-list .card-item{
+    list-style: none;
+}
+.card-list .card-item .card-link {
+    user-select: none;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(14, 147, 236);
+    margin: 9% 20% 1% 20%;
+    color: white;
+    padding: 2% 1% 0 ;
+    border : 2px solid  rgb(14, 147, 236);
+    border-radius: 12px;
+    text-decoration: none;
+    
+    transition: 0.5s;
+    transition: 0.5s ease-in-out;
+}
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
+}
+.card-list .card-item .card-link:hover{
+    box-shadow: 0 10px 10px rgb(14, 147, 236);
+    transition: 0.5s;
+    transition: 0.5s ease-in-out;
+    margin: 10% 21% 2% 21%;
+}
+.card-list .card-link .card-image{
+    width: 90%;
+    height: auto;
+    aspect-ratio: 12 / 5;
+    object-fit: cover;
+    border-radius: 10px;
+    image-rendering: crisp-edges;
+}
+.card-list .card-link .badge{
+    color: rgb(14, 147, 236);
+    padding: 5px 10px;
+    font-size: 500;
+    background: white;
+    width: auto;
+    margin: 5px 30%;
+    border-radius: 50px;
+}
+.card-list .card-link .card-title{
+    font-size: 1.0rem;
+    font-weight: 600;
+    margin: 0px 5%;
+}
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: white;
+    margin: 15px 0 3px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(35deg);
+}
+.card-list .card-link .card-button:hover{
+    color: rgb(14, 147, 236);
+}
+.card-wrapper .swier-slide-button{
+    color: white;
+}

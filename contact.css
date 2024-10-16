@@ -60,14 +60,24 @@ body {
 } 
 
 /*--HOME SECTION--*/
+.contact{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    padding: 3% 30% ;
+}
  .contact h2{ 
     margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.head span {
+    color: rgb(14, 147, 236);
 }
 
 .contact form {
     display: block;
-    max-height: 80vh;
-    padding: 6% 30% ;
     justify-content: center;
     text-align: center;
     
@@ -108,8 +118,18 @@ body {
     border: 2px solid rgb(14, 147, 236);
     color: white;
     border-radius: 10%;
-    animation: floatImage 3s ease-in-out infinite;
-    display: inline-block;
     margin-top: 2rem;
     cursor: pointer;
+}
+.contact form .btn:hover{
+    padding: 12px;
+    background: white;
+    border: 2px solid rgb(14, 147, 236);
+    color: rgb(14, 147, 236);
+    border-radius: 10%;
+    animation: floatImage 3s ease-in-out infinite;
+    display: inline-block;
+    margin-top: 1.5rem;
+    transition: 0.5s;
+    transition: 0.5s ease-in-out;
 }
