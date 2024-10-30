@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-
+    
 }
 .logo {
     font-size: 25px;
@@ -60,3 +60,25 @@ body {
 } 
 
 /*--HOME SECTION--*/
+.card{
+    display: block;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.boite{
+    user-select: none;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(14, 147, 236);
+    color: white;
+    padding: 4% 1% 0 ;
+    border : 2px solid  rgb(14, 147, 236);
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 20% 20%;
+    transition: 0.5s;
+    transition: 0.5s ease-in-out;
+}

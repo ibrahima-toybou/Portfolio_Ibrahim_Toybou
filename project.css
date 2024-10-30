@@ -86,7 +86,7 @@ body {
     cursor: grabbing;
 }
 .card-list .card-item .card-link:hover{
-    box-shadow: 0 10px 10px rgb(14, 147, 236);
+    
     transition: 0.5s;
     transition: 0.5s ease-in-out;
     margin: 10% 21% 2% 21%;
