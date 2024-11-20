@@ -78,9 +78,9 @@ body {
         display: flex;
         flex-direction: column;
         margin: 110px 20% 0 ;
-        height: 40rem;
+        height: auto;
         width: auto;
-        background-color: aliceblue;
+        background-color: white;
     }
     
     /* .title{
@@ -118,7 +118,7 @@ body {
     .cartons{
         height: 80%;
         width: 100%;
-        background-color: black;
+        background-color: rgb(245, 240, 240);
     }
     /*
     .cartons .first {
@@ -133,10 +133,10 @@ body {
     .cartons .first{
         display: flex;
         justify-content: center;
-        margin: 1rem;
-        height: 45%;
+        margin: 0.2rem;
+        height: 20rem;
         width: auto;
-        background-color: black;
+        background-color: rgb(66, 6, 206);
     }
     /*
     .cartons .seconde {
@@ -150,15 +150,16 @@ body {
     .cartons .seconde{
         display: flex;
         justify-content: center;
-        margin: 1rem;
-        height: 45%;
+        margin: 0.2rem;
+        height: 20rem;
         width: auto;
         background-color: black;
     }
     .first-carton{
+        display: block;
         margin: 1rem;
-        height: 85%;
-        width: 13rem;
+        height: 90%;
+        width: 100%;
         background-color: rgb(14, 147, 236);
         border-radius: 2rem;
         overflow: hidden;
@@ -173,12 +174,12 @@ body {
         overflow: hidden;
         position: relative;
     }
-    .first-carton img{
+    /* .first-carton img{
         position: absolute;
         height: 100%;
         width: 100%;
         object-fit: cover;
-    }
+    } */
     
     #my{
         color: rgb(14, 147, 236);
@@ -193,4 +194,25 @@ body {
         font-size: 2.5rem;
         font-weight: 700;
         color: white;
+    }
+    /* PARTIE SOUS CARTONS */
+    .haut{
+        display: flex;
+        height: 80%;
+        width: 100%;
+        background-color: rgb(12, 204, 44);
+    }
+    .haut .image{
+        width: 50%;
+        height: 100%;
+        background-color: brown;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0.5rem;
+    }
+    .haut .image img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
