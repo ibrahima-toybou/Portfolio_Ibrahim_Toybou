@@ -58,79 +58,133 @@ body {
     display: none;
 } 
 /*--HOME SECTION--*/
-.card-wrapper {
-    width: auto;
-    justify-content: center;
+/* .containeur{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-.card-list .card-item{
-    list-style: none;
-}
-.card-list .card-item .card-link {
-    user-select: none;
-    display: block;
     justify-content: center;
-    text-align: center;
-    background-color: rgb(14, 147, 236);
-    margin: 9% 20% 1% 20%;
-    color: white;
-    padding: 2% 1% 0 ;
-    border : 2px solid  rgb(14, 147, 236);
-    border-radius: 12px;
-    text-decoration: none;
-    
-    transition: 0.5s;
-    transition: 0.5s ease-in-out;
-}
-.card-list .card-item .card-link:active{
-    cursor: grabbing;
-}
-.card-list .card-item .card-link:hover{
-    
-    transition: 0.5s;
-    transition: 0.5s ease-in-out;
-    margin: 10% 21% 2% 21%;
-}
-.card-list .card-link .card-image{
-    width: 90%;
+    background-color: rgb(74, 56, 124);
+    margin: 100px 20% 1rem;
     height: auto;
-    aspect-ratio: 12 / 5;
-    object-fit: cover;
-    border-radius: 10px;
-    image-rendering: crisp-edges;
-}
-.card-list .card-link .badge{
-    color: rgb(14, 147, 236);
-    padding: 5px 10px;
-    font-size: 500;
-    background: white;
     width: auto;
-    margin: 5px 30%;
-    border-radius: 50px;
+    
+    
+    
+    
 }
-.card-list .card-link .card-title{
-    font-size: 1.0rem;
-    font-weight: 600;
-    margin: 0px 5%;
-}
-.card-list .card-link .card-button{
-    height: 35px;
-    width: 35px;
-    color: white;
-    margin: 15px 0 3px;
-    background: none;
-    cursor: pointer;
-    transform: rotate(35deg);
-}
-.card-list .card-link .card-button:hover{
-    color: rgb(14, 147, 236);
-}
-.card-wrapper .swier-slide-button{
-    color: white;
-}
-.card-list .card-link .badge-projet2{
-    background: rgb(3, 245, 56);
-}
-.card-list .card-link .badge-projet3{
-    background: rgb(250, 6, 120);
-}
+    */
+    .containeur{
+        display: flex;
+        flex-direction: column;
+        margin: 110px 20% 0 ;
+        height: 40rem;
+        width: auto;
+        background-color: aliceblue;
+    }
+    
+    /* .title{
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin: 1rem;
+        padding: 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        background-color: brown;
+    } */
+    .title{
+        height: 20%;
+        width: 100%;
+        background-color: black;
+        padding: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    /*
+    .cartons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: rgb(193, 197, 193);
+        
+    }
+    */
+    .cartons{
+        height: 80%;
+        width: 100%;
+        background-color: black;
+    }
+    /*
+    .cartons .first {
+        background-color: blue;
+        height: 220px;
+        width: 240px;
+        border-radius: 2rem;
+        position: absolute;
+        right: 0;
+    }
+    */
+    .cartons .first{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        height: 45%;
+        width: auto;
+        background-color: black;
+    }
+    /*
+    .cartons .seconde {
+        background-color: blue;
+        height: 220px;
+        width: 240px;
+        border-radius: 2rem;
+        position: absolute;
+    }
+    */
+    .cartons .seconde{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+        height: 45%;
+        width: auto;
+        background-color: black;
+    }
+    .first-carton{
+        margin: 1rem;
+        height: 85%;
+        width: 13rem;
+        background-color: rgb(60, 228, 45);
+        border-radius: 2rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .seconde-carton{
+        margin: 1rem;
+        height: 85%;
+        width: 13rem;
+        background-color: rgb(60, 228, 45);
+        border-radius: 2rem;
+        overflow: hidden;
+        position: relative;
+    }
+    .first-carton img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .seconde-carton img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        
+    }
+    #my{
+        color: rgb(14, 147, 236);
+    } 
