@@ -179,12 +179,7 @@ body {
         width: 100%;
         object-fit: cover;
     }
-    .seconde-carton img{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        
-    }
+    
     #my{
         color: rgb(14, 147, 236);
     } 
@@ -197,5 +192,5 @@ body {
         position: absolute;
         font-size: 2.5rem;
         font-weight: 700;
-        
+        color: white;
     }
