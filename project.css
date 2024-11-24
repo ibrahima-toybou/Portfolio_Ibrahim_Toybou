@@ -80,139 +80,89 @@ body {
         margin: 110px 20% 0 ;
         height: auto;
         width: auto;
-        background-color: white;
+        
     }
     
-    /* .title{
-        display: flex;
-        justify-content: center;
-        color: white;
-        margin: 1rem;
-        padding: 2rem;
-        font-size: 1.5rem;
-        font-weight: 700;
-        background-color: brown;
-    } */
     .title{
         height: 20%;
         width: 100%;
-        background-color: black;
+        background-color: rgb(0, 0, 0);
         padding: 2rem;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 700;
     }
     
-    /*
-    .cartons{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        height: 300px;
-        width: 100%;
-        background-color: rgb(193, 197, 193);
-        
-    }
-    */
     .cartons{
         height: 80%;
         width: 100%;
-        background-color: rgb(245, 240, 240);
     }
-    /*
-    .cartons .first {
-        background-color: blue;
-        height: 220px;
-        width: 240px;
-        border-radius: 2rem;
-        position: absolute;
-        right: 0;
-    }
-    */
+   
     .cartons .first{
         display: flex;
         justify-content: center;
         margin: 0.2rem;
         height: 20rem;
         width: auto;
-        background-color: rgb(66, 6, 206);
     }
-    /*
-    .cartons .seconde {
-        background-color: blue;
-        height: 220px;
-        width: 240px;
-        border-radius: 2rem;
-        position: absolute;
-    }
-    */
-    .cartons .seconde{
-        display: flex;
-        justify-content: center;
-        margin: 0.2rem;
-        height: 20rem;
-        width: auto;
-        background-color: black;
-    }
+
     .first-carton{
-        display: block;
+        display: flex;
         margin: 1rem;
         height: 90%;
         width: 100%;
-        background-color: rgb(14, 147, 236);
+        /* border: 2px solid rgb(14, 147, 236); */
         border-radius: 2rem;
         overflow: hidden;
         position: relative;
+        justify-content: space-around;
+        align-items: center;
     }
-    .seconde-carton{
-        margin: 1rem;
-        height: 85%;
-        width: 13rem;
-        background-color: rgb(14, 147, 236);
-        border-radius: 2rem;
-        overflow: hidden;
+  
+    /* PARTIE SOUS CARTONS */
+    .carton{
+        height: 90%;
+        width: 40%;
+        /* background-color: aqua; */
+        border-radius: 1rem;
         position: relative;
     }
-    /* .first-carton img{
-        position: absolute;
+    .sous-carton{
+        height: 100%;
+        width: 100%;
+        border-radius: 0.5rem;
+        
+    }
+    .sous-carton img{
+        z-index: 2;
+        opacity: 2;
         height: 100%;
         width: 100%;
         object-fit: cover;
-    } */
-    
-    #my{
-        color: rgb(14, 147, 236);
-    } 
-    .short_tittle{
+        overflow: hidden;
+        position: absolute;
+        border-radius: 1rem;
+        transition: opacity 0.5s ease-in-out;
+    }
+    .sous-carton h2{
+        display: flex;
         height: 100%;
         width: 100%;
-        display: flex;
+        background-color: white;
+        position: absolute;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        font-size: 2.5rem;
+        border-radius: 1rem;
+        font-size: 3rem;
         font-weight: 700;
-        color: white;
+        color:rgb(14, 147, 236);
+        z-index: 1;
+        opacity: 1;
     }
-    /* PARTIE SOUS CARTONS */
-    .haut{
-        display: flex;
-        height: 80%;
-        width: 100%;
-        background-color: rgb(12, 204, 44);
+    .sous-carton:hover img{
+        opacity: 0;
     }
-    .haut .image{
-        width: 50%;
-        height: 100%;
-        background-color: brown;
-        overflow: hidden;
-        position: relative;
-        border-radius: 0.5rem;
+    #my{
+        color: rgb(14, 147, 236);
     }
-    .haut .image img{
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+

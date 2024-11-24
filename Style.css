@@ -67,6 +67,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .home-content h3{
     font-size: 1.5rem;
@@ -144,10 +145,12 @@ span{
     background: transparent;
     border: 2px solid rgb(14, 147, 236);
     color: white;
-    border-radius: 10%;
+    border-radius: 1rem;
     animation: floatImage 2s ease-in-out infinite;
-    display: inline-block;
-    
+    display: inline-block;   
+}
+#cv:hover{
+    background: rgb(14, 147, 236);
 }
 .social-media a:not(#cv):hover{
     background: rgb(14, 147, 236);
