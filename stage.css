@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    
+}
+.container{
+    min-height: 96vh;
+    width: 100%;
+    background-color: rgb(13, 14, 14);
+    margin: 1% 20% 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container h2{
+    padding: 2rem;
+    height: 6rem; 
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: black;
+    border-radius: 0 0 2rem 2rem;
+}
+.container h2 span{
+    color: rgb(14, 147, 236);
+}
+.cartons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    height: 90%;
+    width: 77%;
+    background-color: rgb(13, 14, 14);
+}
+.haut{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 90%;
+    background-color:rgb(13, 14, 14);
+    
+}
+.carton{
+    height: 90%;
+    width: 48%;
+    margin: 1%;
+    background-color: black;
+    border-radius: 1rem;
+}
+.milieu{
+    border-radius: 1rem;
+    height: 30%;
+    width: 90%;
+    background-color: black;
+}
+.bas{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    height: 10%;
+    width: 90%;
+    background-color: black;
+    border-radius: 1rem;
+}
+.bas .lang{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(14, 147, 236);
+    border-radius: 0.5rem;
+}
+.bas .comp{
+    margin-right: 11rem;
+    padding: 1rem;
+    background-color: rgb(13, 14, 14);
+    border-radius: 0.5rem;
+}
+.bas .comp span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(14, 147, 236);
+}
