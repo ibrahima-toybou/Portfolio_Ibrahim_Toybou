@@ -99,7 +99,7 @@ body {
     
 }
 .carton ol li{
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 .milieu{
     border-radius: 1rem;
@@ -158,13 +158,14 @@ body {
     border-radius: 1rem;
 }
 .bas .lang{
-    margin: 1rem;
+    color: white;
+    margin: 2rem;
     padding: 0.5rem 1rem;
     border: 2px solid rgb(14, 147, 236);
     border-radius: 0.5rem;
 }
 .bas .comp{
-    margin-right: 5rem;
+    margin-right: 20rem;
     padding: 1rem;
     background-color: rgb(13, 14, 14);
     border-radius: 0.5rem;

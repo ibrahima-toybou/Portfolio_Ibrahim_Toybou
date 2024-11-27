@@ -96,7 +96,7 @@ body {
     font-size: 1rem;
     color: white;
     background: black;
-    border-radius: 0.8rem;
+    border-radius: 2rem;
     margin: 0.7rem 0;
     background: transparent;
     border: 2px solid rgb(14, 147, 236);
@@ -113,20 +113,23 @@ body {
 }
 
 .contact form .btn{
-    padding: 10px;
+    padding: 0.8rem;
+    width: 7rem;
     background: transparent;
     border: 2px solid rgb(14, 147, 236);
     color: white;
-    border-radius: 10%;
+    border-radius: 2rem;
     margin-top: 2rem;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 .contact form .btn:hover{
-    padding: 12px;
-    background: white;
+    width: 7rem;
+    padding: 0.8rem;
+    background: rgb(14, 147, 236);
     border: 2px solid rgb(14, 147, 236);
-    color: rgb(14, 147, 236);
-    border-radius: 10%;
+    color: white;
+    border-radius: 2rem;
     animation: floatImage 3s ease-in-out infinite;
     display: inline-block;
     margin-top: 1.5rem;
