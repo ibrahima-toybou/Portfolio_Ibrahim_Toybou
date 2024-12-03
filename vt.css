@@ -16,10 +16,9 @@ body {
     width: 100%;
     margin: auto;
     display: block;
-    background: black;
+    background:black;
     color: white;
 }
-
 
 .header {
     position:fixed;
@@ -51,13 +50,6 @@ body {
     margin-left: 2rem;
     font-weight: 700;
 }
-.navbar a:hover,
-.navbar a:active{
-    color: rgb(14, 147, 236);
-}
-#menu-icon{
-    display: none;
-} 
 #vt{
     border: 2px solid rgb(14, 147, 236);
     padding: 0.8rem;
@@ -80,81 +72,40 @@ body {
                 0 0 15px white,
                 0 0 20px white;
 }
-
-/*--HOME SECTION--*/
-.contact{
-    display: block;
-    justify-content: center;
-    text-align: center;
-    margin-top: 5%;
-    padding: 3% 30% ;
+.navbar a:hover{
+    color: rgb(14, 147, 236);
 }
- .contact h2{ 
-    margin-bottom: 1rem;
+.navbar a:active{
+    color: white;
+}
+#menu-icon{
+    display: none;
+}
+/* BODY PAGE */
+.home{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 20rem;
+}
+.home marquee{ 
+    padding: 0 2rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
     font-size: 3rem;
     font-weight: 700;
+    background-color: black;
+    
 }
 .head span {
     color: rgb(14, 147, 236);
 }
-
-.contact form {
-    display: block;
-    justify-content: center;
-    text-align: center;
-    
-}
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    color: white;
-    background: black;
+.big-carton{
+    height: 70vh;
+    width: 120vh;
+    border: 3px dashed white;
     border-radius: 2rem;
-    margin: 0.7rem 0;
-    background: transparent;
-    border: 2px solid rgb(14, 147, 236);
-}
-
-.contact form .input-box input {
-    flex: 1 1 48%;
-}
-
-.contact form textarea {
-    height: 200px;
-    resize: none;
-    width: 100%;
-}
-
-.contact form .btn{
-    padding: 0.8rem;
-    width: 7rem;
-    background: transparent;
-    border: 2px solid rgb(14, 147, 236);
-    color: white;
-    border-radius: 2rem;
-    margin-top: 2rem;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-.contact form .btn:hover{
-    width: 7rem;
-    padding: 0.8rem;
-    background: rgb(14, 147, 236);
-    border: 2px solid rgb(14, 147, 236);
-    color: white;
-    border-radius: 2rem;
-    animation: floatImage 3s ease-in-out infinite;
-    display: inline-block;
-    margin-top: 1.5rem;
-    transition: 0.5s;
-    transition: 0.5s ease-in-out;
 }

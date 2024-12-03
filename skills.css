@@ -61,6 +61,28 @@ body {
 #menu-icon{
     display: none;
 } 
+#vt{
+    border: 2px solid rgb(14, 147, 236);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgb(14, 147, 236),
+                0 0 20px rgb(14, 147, 236),
+                0 0 30px rgb(14, 147, 236),
+                0 0 40px rgb(14, 147, 236);
+}
+#vt:hover{
+    border: 2px solid rgb(14, 147, 236);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    background-color: rgb(14, 147, 236);
+    color: white;
+    box-shadow: 0 0 5px white,
+                0 0 10px white,
+                0 0 15px white,
+                0 0 20px white;
+}
 
 /*--HOME SECTION--*/
 
