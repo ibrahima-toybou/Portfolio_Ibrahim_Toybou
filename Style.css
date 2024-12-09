@@ -45,6 +45,9 @@ body {
     color: white;
     cursor: pointer;
 }
+.logo:hover{
+    color: rgb(14, 147, 236);
+}
 .point{
     font-size: 35px;
     font-weight: 700;
@@ -68,15 +71,8 @@ body {
                 0 0 40px rgb(14, 147, 236);
 }
 #vt:hover{
-    border: 2px solid rgb(14, 147, 236);
-    padding: 0.8rem;
-    border-radius: 1rem;
-    background-color: rgb(14, 147, 236);
-    color: white;
-    box-shadow: 0 0 5px white,
-                0 0 10px white,
-                0 0 15px white,
-                0 0 20px white;
+    color: rgb(14, 147, 236);
+    
 }
 .navbar a:hover,
 .navbar a:active{

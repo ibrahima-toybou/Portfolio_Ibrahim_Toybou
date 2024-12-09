@@ -101,6 +101,51 @@ body {
 .carton ol li{
     padding: 0.2rem;
 }
+.milieu{
+    border-radius: 1rem;
+    max-height: 14rem;
+    width: 90%;
+    background-color: black;
+    margin: 0rem;
+    padding: 1rem;
+    overflow-y: auto; /* Activer le défilement vertical */
+    scrollbar-width: thin; /* (Optionnel) Réduit la largeur de la barre de défilement pour Firefox */
+    scrollbar-color: rgb(14, 147, 236) #333;
+}
+/* Style de la barre de défilement (pour Chrome, Edge, et autres basés sur WebKit) */
+.milieu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.milieu::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.milieu::-webkit-scrollbar-track {
+    background: #333;
+}
+.milieu h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.milieu p{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+}
+.milieu strong{
+    color: rgb(14, 147, 236);
+}
+.text-décalé{
+    margin-left: 2rem;
+}
 .bas{
     display: flex;
     justify-content: flex-end;
