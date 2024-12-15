@@ -13,7 +13,7 @@
 }
 
 body {
-    position: fixed;
+    
     width: 100%;
     margin: auto;
     display: flex;
@@ -47,18 +47,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     height: 90%;
-    width: 77%;
+    width: 100%;
     background-color: rgb(13, 14, 14);
 }
 .haut{
-    margin: 1rem;
+    margin-top: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     background-color:rgb(13, 14, 14);
     
 }
@@ -68,7 +68,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 48%;
+    width: 90%;
     margin: 1%;
     background-color: black;
     border-radius: 1rem;
@@ -78,28 +78,76 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 20%;
     width: 100%;
+    font-size: 2rem;
 }
 .carton p{
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     height: 90%;
     width: 100%;
+    letter-spacing: 2px;
+    
 }
 .color-text{
     color: rgb(14, 147, 236);
 }
 .carton ol{
-    padding: 0.5rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     height: 90%;
     width: 100%;
     margin-left: 4rem;
-    
+    letter-spacing: 2px;
 }
 .carton ol li{
     padding: 0.2rem;
+}
+.milieu{
+    border-radius: 1rem;
+    max-height: 14rem;
+    width: 90%;
+    background-color: black;
+    margin: 0rem;
+    padding: 1rem;
+    overflow-y: auto; /* Activer le défilement vertical */
+    scrollbar-width: thin; /* (Optionnel) Réduit la largeur de la barre de défilement pour Firefox */
+    scrollbar-color: rgb(14, 147, 236) #333;
+}
+/* Style de la barre de défilement (pour Chrome, Edge, et autres basés sur WebKit) */
+.milieu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.milieu::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.milieu::-webkit-scrollbar-track {
+    background: #333;
+}
+.milieu h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.milieu p{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+}
+.milieu strong{
+    color: rgb(14, 147, 236);
+}
+.text-décalé{
+    margin-left: 2rem;
 }
 .bas{
     display: flex;
