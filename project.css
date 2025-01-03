@@ -111,25 +111,24 @@ body {
     }
     
     .cartons{
-        height: 80%;
+        height: 100%;
         width: 100%;
     }
    
     .cartons .first{
         display: flex;
         justify-content: center;
-        margin: 0.2rem;
-        height: 20rem;
+        margin: 0.5rem;
+        height: 22rem;
         width: auto;
     }
 
     .first-carton{
         display: flex;
         margin: 1rem;
-        height: 98%;
+        height: 100%;
         width: 100%;
         /* border: 2px solid rgb(14, 147, 236); */
-        border-radius: 2rem;
         overflow: hidden;
         position: relative;
         justify-content: space-around;
@@ -141,26 +140,24 @@ body {
         height: 100%;
         width: 49%;
         /* background-color: aqua; */
-        border-radius: 1rem;
         position: relative;
     }
     .sous-carton{
         height: 100%;
         width: 100%;
-        border-radius: 0.5rem;
-        background-color: rgb(14, 147, 236);
+        border-radius: 1rem;
+        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
     }
     .sous-carton img{
-        z-index: 2;
-        opacity: 2;
+        /* z-index: 2;
+        opacity: 2; */
         height: 55%;
-        width: 80%;
+        width: 98%;
         top: 5px;
-        left: 50px;
         object-fit: cover;
         overflow: hidden;
         position: absolute;
@@ -173,21 +170,37 @@ body {
         flex-direction: column;
         height: 40%;
         width: 98%;
-        background-color: black;
+        background-color: transparent;
         position: absolute;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         border-radius: 1rem;
         font-size: 1rem;
         font-weight: 700;
-        color:white;
+        color:black;
         z-index: 1;
         opacity: 1;
+        padding: 10px;
+    }
+    .sous-carton .text h2{
+        margin: 0.5rem;
     }
     /* .sous-carton:hover img{
         opacity: 0;
     } */
     #my{
         color: rgb(14, 147, 236);
+    }
+    .detail{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 10px;
+        left: 13rem;
+        padding: 0.5rem;
+        background-color: rgb(14, 147, 236);
+        color: white;
+        border-radius: 10px;
     }
 
