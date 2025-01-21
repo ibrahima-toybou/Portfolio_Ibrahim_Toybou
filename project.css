@@ -94,10 +94,9 @@ body {
     .containeur{
         display: flex;
         flex-direction: column;
-        margin: 110px 20% 0 ;
+        margin: 110px 20% 50px ;
         height: auto;
         width: auto;
-        
     }
     
     .title{
@@ -151,6 +150,7 @@ body {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        position: relative;
     }
     .sous-carton img{
         /* z-index: 2;
@@ -196,11 +196,18 @@ body {
         justify-content: center;
         align-items: center;
         position: absolute;
+        gap: 5px;
         bottom: 10px;
-        left: 13rem;
+        left: 12rem;
         padding: 0.5rem;
-        background-color: rgb(14, 147, 236);
-        color: white;
+        background-color: transparent;
+        color: rgb(14, 147, 236);
+        border: solid 2px;
+        
         border-radius: 10px;
     }
-
+    .detail:hover{
+        background-color: rgb(14, 147, 236);
+        color: white;
+        transition: 0.7s ease-in-out;
+    }

@@ -133,7 +133,7 @@ span{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-0.4rem);
+        transform: translateY(-0.9rem);
     }
     100% {
         transform: translateY(0);
@@ -176,9 +176,9 @@ span{
     border: 2px solid rgb(14, 147, 236);
     color: white;
     border-radius: 1rem;
-    animation: floatImage 2s ease-in-out infinite;
+    animation: floatImage 1.5s ease-in-out infinite;
     display: inline-block; 
-    transition:  .5s ease;  
+    transition:  .6s ease;  
 }
 #cv:hover{
     background: rgb(14, 147, 236);
