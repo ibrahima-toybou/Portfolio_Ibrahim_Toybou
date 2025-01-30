@@ -146,7 +146,7 @@ body {
     width: 33%;
     margin-right: 0.5rem;
     background-color: white;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     transition:  .5s ease;
     cursor: pointer;  
 }
@@ -173,4 +173,17 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+.more-actus{
+    margin-bottom: 3rem;
+    
+}
+.more-actus a{
+    color: white;
+    transition:  .5s ease;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+.more-actus a:hover{
+    background-color: rgb(14, 147, 236);
 }
