@@ -214,8 +214,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center top;
+    object-position: center;
     transition: 0.5s ease-in-out;
 }
 
@@ -223,7 +222,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    object-position: center top;
+    object-position: center;
 }
 #my{
     color: rgb(14, 147, 236);

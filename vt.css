@@ -147,7 +147,8 @@ body {
     margin-right: 0.5rem;
     background-color: white;
     margin-bottom: 1rem;
-    transition:  .5s ease;  
+    transition:  .5s ease;
+    cursor: pointer;  
 }
 .actu:hover{
     transform: scale(1.1,1.1);
