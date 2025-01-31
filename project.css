@@ -151,6 +151,7 @@ body {
         justify-content: flex-start;
         align-items: center;
         position: relative;
+        overflow: hidden;
     }
     .sous-carton img{
         /* z-index: 2;
@@ -158,11 +159,11 @@ body {
         height: 55%;
         width: 98%;
         top: 5px;
-        object-fit: cover;
-        overflow: hidden;
         position: absolute;
         border-radius: 1rem;
         transition: opacity 0.5s ease-in-out;
+        object-position: center;
+        
     }
     .sous-carton .text{
         bottom: 5px;
@@ -181,6 +182,7 @@ body {
         z-index: 1;
         opacity: 1;
         padding: 10px;
+        border: solid rgb(14, 147, 236) 5px;
     }
     .sous-carton .text h2{
         margin: 0.5rem;
