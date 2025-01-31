@@ -99,11 +99,17 @@ body {
     text-align: center;
     
 }
-.contact form .input-box{
+.contact form .input-box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0.7rem;
+    gap: 0.1rem;
+}
+.nb{
+    display: flex;
+    width: 49%;
+    position: relative;
 }
 
 .contact form .input-box input,
@@ -152,4 +158,19 @@ body {
     margin-top: 1.5rem;
     transition: 0.5s;
     transition: 0.5s ease-in-out;
+}
+input:focus + label {
+    transform: translateY(-25px);
+}
+input:not(:placeholder-shown) + label {
+    transform: translateY(-25px);
+}
+label{
+    position: absolute;
+    top: 1.8rem;
+    left: 1rem;
+    transition: 0.5s ease-in-out;
+    background-color: black;
+    padding: 0 0.5rem 0 0.5rem ;
+    border-radius: 50%;
 }
