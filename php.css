@@ -178,3 +178,16 @@ body {
     font-weight: 700;
     color: rgb(14, 147, 236);
 }
+#retour {
+    position: absolute;
+    left: 20rem;
+    padding: 1rem 1.5rem;
+    color: white;
+    background-color: rgb(14, 147, 236);
+    border-radius: 0.5rem;
+    transition: 0.6s ease;
+  }
+  #retour:hover {
+    color: rgb(14, 147, 236);
+    background-color: white;
+  }
