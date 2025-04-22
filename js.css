@@ -1,193 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
-    
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    background: black;
-    color: white;
-    
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background: black;
+  color: white;
 }
-.container{
-    min-height: 96vh;
-    width: 100%;
-    background-color: rgb(13, 14, 14);
-    margin: 1% 16% 1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.container {
+  min-height: 96vh;
+  width: 100%;
+  background-color: rgb(13, 14, 14);
+  margin: 1% 16% 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container h2{
-    padding: 2rem;
-    height: 6rem; 
-    font-size: 2rem;
-    font-weight: 700;
-    background-color: black;
-    border-radius: 0 0 2rem 2rem;
+.container h2 {
+  padding: 2rem;
+  height: 6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  background-color: black;
+  border-radius: 0 0 2rem 2rem;
 }
-.container h2 span{
-    color: rgb(14, 147, 236);
+.container h2 span {
+  color: rgb(14, 147, 236);
 }
-.cartons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 90%;
-    width: 100%;
-    background-color: rgb(13, 14, 14);
+.cartons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+  background-color: rgb(13, 14, 14);
 }
-.haut{
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color:rgb(13, 14, 14);
-    
+.haut {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(13, 14, 14);
 }
-.carton{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 90%;
-    margin: 1%;
-    background-color: black;
-    border-radius: 1rem;
-    position: relative;
+.carton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  margin: 1%;
+  background-color: black;
+  border-radius: 1rem;
+  position: relative;
 }
-.carton h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20%;
-    width: 100%;
-    font-size: 2rem;
+.carton h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  font-size: 2rem;
 }
-.carton p{
-    padding: 1rem;
-    font-size: 1.5rem;
-    height: 90%;
-    width: 100%;
-    letter-spacing: 2px;
-    
+.carton p {
+  padding: 1rem;
+  font-size: 1.5rem;
+  height: 90%;
+  width: 100%;
+  letter-spacing: 2px;
 }
-.color-text{
-    color: rgb(14, 147, 236);
+.color-text {
+  color: rgb(14, 147, 236);
 }
-.carton ol{
-    padding: 1rem;
-    font-size: 1.5rem;
-    height: 90%;
-    width: 100%;
-    margin-left: 4rem;
-    letter-spacing: 2px;
+.carton ol {
+  padding: 1rem;
+  font-size: 1.5rem;
+  height: 90%;
+  width: 100%;
+  margin-left: 4rem;
+  letter-spacing: 2px;
 }
-.carton ol li{
-    padding: 0.2rem;
+.carton ol li {
+  padding: 0.2rem;
 }
-.milieu{
-    border-radius: 1rem;
-    max-height: 14rem;
-    width: 90%;
-    background-color: black;
-    margin: 0rem;
-    padding: 1rem;
-    overflow-y: auto; /* Activer le défilement vertical */
-    scrollbar-width: thin; /* (Optionnel) Réduit la largeur de la barre de défilement pour Firefox */
-    scrollbar-color: rgb(14, 147, 236) #333;
+.milieu {
+  border-radius: 1rem;
+  max-height: 14rem;
+  width: 90%;
+  background-color: black;
+  margin: 0rem;
+  padding: 1rem;
+  overflow-y: auto; /* Activer le défilement vertical */
+  scrollbar-width: thin; /* (Optionnel) Réduit la largeur de la barre de défilement pour Firefox */
+  scrollbar-color: rgb(14, 147, 236) #333;
 }
 /* Style de la barre de défilement (pour Chrome, Edge, et autres basés sur WebKit) */
 .milieu::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 .milieu::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 4px;
+  background: #555;
+  border-radius: 4px;
 }
 
 .milieu::-webkit-scrollbar-track {
-    background: #333;
+  background: #333;
 }
-.milieu h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 1.5rem;
-    width: 100%;
-    margin-top: 1rem;
+.milieu h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
 }
-.milieu p{
-    margin-top: 1rem;
-    padding: 0.5rem;
-    font-size: 1rem;
-    height: auto;
-    width: 100%;
+.milieu p {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  height: auto;
+  width: 100%;
 }
-.milieu strong{
-    color: rgb(14, 147, 236);
+.milieu strong {
+  color: rgb(14, 147, 236);
 }
-.text-décalé{
-    margin-left: 2rem;
+.text-décalé {
+  margin-left: 2rem;
 }
-.bas{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 1rem;
-    margin: 1rem;
-    height: 10%;
-    width: 90%;
-    background-color: black;
-    border-radius: 1rem;
+.bas {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  height: 10%;
+  width: 90%;
+  background-color: black;
+  border-radius: 1rem;
 }
-.bas .lang{
-    color: white;
-    margin: 2rem;
-    padding: 0.5rem 1rem;
-    border: 2px solid rgb(14, 147, 236);
-    border-radius: 0.5rem;
+.bas .lang {
+  color: white;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid rgb(14, 147, 236);
+  border-radius: 0.5rem;
 }
-.bas .comp{
-    margin-right: 20rem;
-    padding: 1rem;
-    background-color: rgb(13, 14, 14);
-    border-radius: 0.5rem;
+.bas .comp {
+  margin-right: 5rem;
+  padding: 1rem;
+  background-color: rgb(13, 14, 14);
+  border-radius: 0.5rem;
 }
-.bas .comp span{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: rgb(14, 147, 236);
+.bas .comp span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(14, 147, 236);
 }
 #retour {
-    position: absolute;
-    left: 20rem;
-    padding: 1rem 1.5rem;
-    color: white;
-    background-color: rgb(14, 147, 236);
-    border-radius: 0.5rem;
-    transition: 0.6s ease;
-  }
-  #retour:hover {
-    color: rgb(14, 147, 236);
-    background-color: white;
-  }
+  position: absolute;
+  left: 20rem;
+  padding: 1rem 1.5rem;
+  color: white;
+  background-color: rgb(14, 147, 236);
+  border-radius: 0.5rem;
+  transition: 0.6s ease;
+}
+#retour:hover {
+  color: rgb(14, 147, 236);
+  background-color: white;
+}
