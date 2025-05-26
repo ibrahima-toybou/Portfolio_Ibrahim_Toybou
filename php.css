@@ -186,3 +186,13 @@ body {
   color: rgb(14, 147, 236);
   background-color: white;
 }
+a .preuve {
+  text-align: center;
+  font-size: 1rem;
+  width: 6rem;
+  height: 2rem;
+  color: aliceblue;
+  margin: 1rem;
+  background-color: rgb(14, 147, 236);
+  border-radius: 1rem;
+}
