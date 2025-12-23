@@ -1,229 +1,505 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: "Ubuntu Mono", monospace;
-    font-weight: 700;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
 }
 
 body {
-    width: 100%;
-    margin: auto;
-    display: block;
-    background: black;
-    color: white;
-    
+  width: 100%;
+  margin: auto;
+  display: block;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
 }
 
-
+/* HEADER - Conservé tel quel */
 .header {
-    position:fixed;
-    width: 100%;
-    height: 100px;
-    top: 0;
-    left: 0;
-    
-    padding: 2rem 20%;
-    background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  padding: 2rem 20%;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  border-bottom: 1px solid rgba(14, 147, 236, 0.1);
 }
+
 .logo {
-    font-size: 25px;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
-.logo:hover{
-    color: rgb(14, 147, 236);
+
+.logo:hover {
+  color: rgb(14, 147, 236);
 }
-.point{
-    font-size: 35px;
-    font-weight: 700;
-    color: rgb(14, 147, 236);
+
+.point {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(14, 147, 236);
 }
+
 .navbar a {
-    
-    color: white;
-    margin-left: 2rem;
-    font-weight: 700;
+  color: white;
+  margin-left: 2rem;
+  font-weight: 700;
+  position: relative;
+  transition: color 0.3s ease;
 }
+
 .navbar a:hover,
-.navbar a:active{
-    color: rgb(14, 147, 236);
-}
-#menu-icon{
-    display: none;
-} 
-#vt{
-    border: 2px solid rgb(14, 147, 236);
-    padding: 0.8rem;
-    border-radius: 1rem;
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 10px rgb(14, 147, 236),
-                0 0 20px rgb(14, 147, 236),
-                0 0 30px rgb(14, 147, 236),
-                0 0 40px rgb(14, 147, 236);
-}
-#vt:hover{
-    color: rgb(14, 147, 236);
+.navbar a:active {
+  color: rgb(14, 147, 236);
 }
 
-/*--HOME SECTION--*/
-
-/* .containeur{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(74, 56, 124);
-    margin: 100px 20% 1rem;
-    height: auto;
-    width: auto;
-    
-    
-    
-    
-}
-    */
-.containeur{
-    display: flex;
-    flex-direction: column;
-    margin: 110px 20% 0 ;
-    height: 40rem;
-    width: auto;
-    background-color: aliceblue;
+#menu-icon {
+  display: none;
 }
 
-/* .title{
-    display: flex;
-    justify-content: center;
-    color: white;
-    margin: 1rem;
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background-color: brown;
-} */
-.title{
-    height: 20%;
+#vt {
+  border: 2px solid rgb(14, 147, 236);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px rgb(14, 147, 236), 0 0 20px rgb(14, 147, 236),
+    0 0 30px rgb(14, 147, 236), 0 0 40px rgb(14, 147, 236);
+  transition: all 0.3s ease;
+}
+
+#vt:hover {
+  color: rgb(14, 147, 236);
+  transform: translateY(-2px);
+}
+
+/* TITLE - Conservé tel quel */
+.title {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: transparent;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+#my {
+  color: rgb(14, 147, 236);
+  text-shadow: 0 0 20px rgba(14, 147, 236, 0.5);
+}
+
+/* CONTAINER - Modernisé */
+.containeur {
+  display: flex;
+  flex-direction: column;
+  margin: 120px auto 50px;
+  max-width: 1400px;
+  padding: 0 5%;
+  min-height: calc(100vh - 170px);
+}
+
+/* CARTONS - Design hexagonal moderne */
+.cartons {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.first,
+.seconde {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* CARDS - Design hexagonal avec effet 3D */
+.first-carton,
+.seconde-carton {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.first-carton::before,
+.seconde-carton::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(14, 147, 236, 0.1),
+    rgba(14, 147, 236, 0.05)
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  border: 2px solid rgba(14, 147, 236, 0.3);
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.first-carton::after,
+.seconde-carton::after {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, rgba(14, 147, 236, 0.2), transparent 70%);
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+  filter: blur(20px);
+}
+
+.first-carton:hover::before,
+.seconde-carton:hover::before {
+  border-color: rgb(14, 147, 236);
+  background: linear-gradient(
+    135deg,
+    rgba(14, 147, 236, 0.2),
+    rgba(14, 147, 236, 0.1)
+  );
+  box-shadow: 0 0 30px rgba(14, 147, 236, 0.4),
+    inset 0 0 20px rgba(14, 147, 236, 0.1);
+}
+
+.first-carton:hover::after,
+.seconde-carton:hover::after {
+  opacity: 1;
+}
+
+.first-carton:hover,
+.seconde-carton:hover {
+  transform: translateY(-15px) rotateY(5deg) rotateX(5deg);
+}
+
+.first-carton img,
+.seconde-carton img {
+  position: absolute;
+  inset: 15px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  object-fit: contain;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  transition: all 0.5s ease;
+  z-index: 2;
+  filter: drop-shadow(0 0 10px rgba(14, 147, 236, 0.3));
+}
+
+.first-carton:hover img,
+.seconde-carton:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 20px rgba(14, 147, 236, 0.6)) brightness(1.1);
+}
+
+/* Label au survol */
+.first-carton:hover::after,
+.seconde-carton:hover::after {
+  content: attr(data-skill);
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  z-index: 10;
+  clip-path: none;
+  filter: none;
+}
+
+/* Animation d'entrée en spirale */
+@keyframes spiralIn {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.first-carton,
+.seconde-carton {
+  animation: spiralIn 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  opacity: 0;
+}
+
+.first .first-carton:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.first .first-carton:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.first .first-carton:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.first .first-carton:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.seconde .seconde-carton:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.seconde .seconde-carton:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.seconde .seconde-carton:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.seconde .seconde-carton:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Effet de fond animé */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(14, 147, 236, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(14, 147, 236, 0.05) 0%,
+      transparent 50%
+    );
+  z-index: -1;
+  animation: pulse 8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 10%;
+  }
+
+  .first,
+  .seconde {
+    gap: 2.5rem;
+  }
+
+  .first-carton,
+  .seconde-carton {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 1.5rem 5%;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 100px;
+    left: -100%;
     width: 100%;
-    background-color: black;
-    padding: 2rem;
+    background: rgba(0, 0, 0, 0.98);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    transition: left 0.3s ease;
+    border-top: 1px solid rgba(14, 147, 236, 0.2);
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
     text-align: center;
-    font-size: 1.5rem;
-    font-weight: 700;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+  }
+
+  #menu-icon:hover {
+    color: rgb(14, 147, 236);
+  }
+
+  .cartons {
+    gap: 3rem;
+  }
+
+  .first,
+  .seconde {
+    gap: 2rem;
+  }
+
+  .first-carton,
+  .seconde-carton {
+    width: 180px;
+    height: 180px;
+  }
 }
 
-/*
-.cartons{
-    display: flex;
+@media (max-width: 600px) {
+  .containeur {
+    padding: 0 3%;
+  }
+
+  .title {
+    padding: 2rem 1rem;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .cartons {
+    gap: 2rem;
+  }
+
+  .first,
+  .seconde {
+    gap: 1.5rem;
+  }
+
+  .first-carton,
+  .seconde-carton {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem 3%;
+    height: 80px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .point {
+    font-size: 24px;
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
+  }
+
+  #vt {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .first,
+  .seconde {
+    gap: 1rem;
+  }
+
+  .first-carton,
+  .seconde-carton {
+    width: 130px;
+    height: 130px;
+  }
+
+  .first-carton img,
+  .seconde-carton img {
+    inset: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+  }
+}
+
+@media (max-width: 360px) {
+  .first,
+  .seconde {
     flex-direction: column;
     align-items: center;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    background-color: rgb(193, 197, 193);
-    
-}
-*/
-.cartons{
-    height: 80%;
-    width: 100%;
-    background-color: black;
-}
-/*
-.cartons .first {
-    background-color: blue;
-    height: 220px;
-    width: 240px;
-    border-radius: 2rem;
-    position: absolute;
-    right: 0;
-}
-*/
-.cartons .first{
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    height: 45%;
-    width: auto;
-    background-color: black;
-    cursor: pointer;
-    transition: 0.5s ease-in-out;
-}
-/* .cartons .first:hover{
-    margin: 1.5rem;
-} */
-/*
-.cartons .seconde {
-    background-color: blue;
-    height: 220px;
-    width: 240px;
-    border-radius: 2rem;
-    position: absolute;
-}
-*/
-.cartons .seconde{
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    height: 45%;
-    width: auto;
-    background-color: black;
-    cursor: pointer;
-}
-.first-carton{
-    margin: 1rem;
-    height: 85%;
-    width: 13rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    position: relative;
-    transition: 0.5s ease-in-out;
-}
-.first-carton:hover{
-    transform: scale(1.1,1.1);
-    
-}
-.seconde-carton{
-    margin: 1rem;
-    height: 85%;
-    width: 13rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    position: relative;
-    transition: 0.5s ease-in-out;
-    box-shadow: 1px 2px 5px rgba(6, 236, 6, 0.15);
-}
-.seconde-carton:hover{
-    transform: scale(1.1,1.1);
-}
-.first-carton img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-position: center;
-    transition: 0.5s ease-in-out;
-}
+  }
 
-.seconde-carton img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-position: center;
+  .first-carton,
+  .seconde-carton {
+    width: 160px;
+    height: 160px;
+  }
 }
-#my{
-    color: rgb(14, 147, 236);
-} 

@@ -69,23 +69,7 @@ body {
 #vt:hover {
   color: rgb(14, 147, 236);
 }
-/*--HOME SECTION--*/
-/* .containeur{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(74, 56, 124);
-    margin: 100px 20% 1rem;
-    height: auto;
-    width: auto;
-    
-    
-    
-    
-}
-    */
+
 .containeur {
   display: flex;
   flex-direction: column;
@@ -206,4 +190,792 @@ body {
   background-color: rgb(14, 147, 236);
   color: white;
   transition: 0.7s ease-in-out;
+}
+/*test*/
+.projects-container {
+  padding: 0 10% 80px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2.5rem;
+}
+
+.project-card {
+  background: linear-gradient(
+    135deg,
+    rgba(14, 147, 236, 0.05),
+    rgba(14, 147, 236, 0.02)
+  );
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(14, 147, 236, 0.1);
+  cursor: pointer;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, transparent, rgba(14, 147, 236, 0.1));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(14, 147, 236, 0.3);
+  border-color: rgba(14, 147, 236, 0.4);
+}
+
+.project-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-title::before {
+  content: "";
+  width: 4px;
+  height: 24px;
+  background: linear-gradient(180deg, #0e93ec, transparent);
+  border-radius: 2px;
+}
+
+.project-description {
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.8rem 1.5rem;
+  background: rgba(14, 147, 236, 0.1);
+  color: #0e93ec;
+  border-radius: 50px;
+  border: 2px solid #0e93ec;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  background: #0e93ec;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+.project-link i {
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 5%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.98);
+    flex-direction: column;
+    padding: 2rem 0;
+    transition: left 0.3s ease;
+    border-top: 1px solid rgba(14, 147, 236, 0.2);
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects-container {
+    padding: 0 5% 60px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    border-radius: 15px;
+  }
+
+  .project-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+}
+/* Ajout des media queries manquantes pour un responsive complet */
+
+/* Tablettes en mode paysage et petits écrans desktop */
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 10%;
+  }
+
+  .containeur {
+    margin: 110px 10% 50px;
+  }
+
+  .projects-container {
+    padding: 0 5% 80px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Tablettes en mode portrait */
+@media (max-width: 900px) {
+  .header {
+    padding: 1.5rem 5%;
+  }
+
+  .containeur {
+    margin: 100px 5% 40px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.98);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    transition: left 0.3s ease;
+    border-top: 1px solid rgba(14, 147, 236, 0.2);
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    text-align: center;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  #menu-icon:hover {
+    color: rgb(14, 147, 236);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .cartons .first {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .first-carton {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carton {
+    width: 100%;
+    height: 22rem;
+    margin-bottom: 1rem;
+  }
+
+  .detail {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Smartphones en mode paysage et petites tablettes */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .point {
+    font-size: 28px;
+  }
+
+  .containeur {
+    margin: 90px 3% 30px;
+  }
+
+  .title {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 0 3% 60px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    border-radius: 15px;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-link {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .sous-carton .text {
+    font-size: 0.9rem;
+  }
+
+  .detail {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  #vt {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem 3%;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .point {
+    font-size: 24px;
+  }
+
+  .containeur {
+    margin: 80px 2% 20px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
+  }
+
+  .projects-container {
+    padding: 0 2% 40px;
+  }
+
+  .project-card {
+    border-radius: 12px;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-title::before {
+    width: 3px;
+    height: 20px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .carton {
+    height: 18rem;
+  }
+
+  .sous-carton .text {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .sous-carton .text h2 {
+    margin: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .detail {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    left: 50%;
+  }
+
+  #vt {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 360px) {
+  .header {
+    padding: 0.8rem 2%;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .point {
+    font-size: 22px;
+  }
+
+  .title h1 {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .carton {
+    height: 16rem;
+  }
+}
+/* Ajout des media queries manquantes pour un responsive complet */
+
+/* Tablettes en mode paysage et petits écrans desktop */
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem 10%;
+  }
+
+  .containeur {
+    margin: 110px 10% 50px;
+  }
+
+  .projects-container {
+    padding: 0 5% 80px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2rem;
+  }
+}
+
+/* Tablettes en mode portrait */
+@media (max-width: 900px) {
+  .header {
+    padding: 1.5rem 5%;
+  }
+
+  .containeur {
+    margin: 100px 5% 40px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.98);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    transition: left 0.3s ease;
+    border-top: 1px solid rgba(14, 147, 236, 0.2);
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    padding: 0.5rem 2rem;
+    text-align: center;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  #menu-icon:hover {
+    color: rgb(14, 147, 236);
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .cartons .first {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .first-carton {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .carton {
+    width: 100%;
+    height: 22rem;
+    margin-bottom: 1rem;
+  }
+
+  .detail {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Smartphones en mode paysage et petites tablettes */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .point {
+    font-size: 28px;
+  }
+
+  .containeur {
+    margin: 90px 3% 30px;
+  }
+
+  .title {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .title h1 {
+    font-size: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 0 3% 60px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    border-radius: 15px;
+  }
+
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-link {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .sous-carton .text {
+    font-size: 0.9rem;
+  }
+
+  .detail {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  #vt {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Petits smartphones */
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem 3%;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .point {
+    font-size: 24px;
+  }
+
+  .containeur {
+    margin: 80px 2% 20px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .title h1 {
+    font-size: 1.2rem;
+  }
+
+  .projects-container {
+    padding: 0 2% 40px;
+  }
+
+  .project-card {
+    border-radius: 12px;
+  }
+
+  .project-content {
+    padding: 1.2rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-title::before {
+    width: 3px;
+    height: 20px;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .project-image {
+    height: 180px;
+  }
+
+  .carton {
+    height: 18rem;
+  }
+
+  .sous-carton .text {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .sous-carton .text h2 {
+    margin: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .detail {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    left: 50%;
+  }
+
+  #vt {
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  }
+
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 360px) {
+  .header {
+    padding: 0.8rem 2%;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .point {
+    font-size: 22px;
+  }
+
+  .title h1 {
+    font-size: 1rem;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .project-image {
+    height: 160px;
+  }
+
+  .carton {
+    height: 16rem;
+  }
 }
